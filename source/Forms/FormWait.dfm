@@ -1,0 +1,53 @@
+object frmWait: TfrmWait
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'frmWait'
+  ClientHeight = 289
+  ClientWidth = 499
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object imgWait: TsImage
+    Left = 136
+    Top = 8
+    Width = 200
+    Height = 200
+    Picture.Data = {07544269746D617000000000}
+    Transparent = True
+    SkinData.SkinSection = 'CHECKBOX'
+  end
+  object lblText: TsLabel
+    Left = 80
+    Top = 214
+    Width = 313
+    Height = 67
+    Alignment = taCenter
+    ParentFont = False
+    WordWrap = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    UseSkinColor = False
+  end
+  object tmr: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = tmrTimer
+    Left = 32
+    Top = 24
+  end
+end
